@@ -1,4 +1,15 @@
 cd A:\coding\web\lead-manager
+
+##############################################
+https://stackoverflow.com/questions/46877667/how-to-push-a-new-initial-project-to-github-using-vs-code
+git init
+git commit -m "Your comment"
+git remote add origin https://github.com/rey-rubio/leads-manager.git
+git remote -v
+git push -u origin master
+##############################################
+
+
 python --version
 pip3 install pipenv
 pipenv shell
@@ -29,3 +40,16 @@ PostMan post requests headers/body
 
 *************************************
 python manage.py startapp frontend
+# create src/components, static/frontend, templates/frontend
+cd .. (to the root)
+
+npm init -y
+npm i -D webpack webpack-cli
+npm i -D @babel/core babel-loader @babel/preset-env @babel/preset-react babel-plugin-transform-class-properties
+npm i react react-dom prop-types
+* create .babelrc
+* create webpack.config.js
+* configure scripts in package.json
+* create index.js in frontend/src
+* create Header.js, then import it in App.js
+
