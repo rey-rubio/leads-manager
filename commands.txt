@@ -1,0 +1,31 @@
+cd A:\coding\web\lead-manager
+python --version
+pip3 install pipenv
+pipenv shell
+pipenv install django djangorestframework django-rest-knox
+django-admin startproject leadmanager
+
+* make sure you are using the right Python interpretter
+* in our case, use the pipenv C:\Users\russe\.virtualenvs\lead-manager-Z4WBpGlz
+* pipenv --venv
+
+python manage.py startapp leads
+
+* make sure 'leads' is in INSTALLED_APPS in settings.py
+* make sure 'rest_framework' is in INSTALLED_APPS in settings.py
+
+* create Lead models
+python manage.py makemigrations leads
+python manage.py migrate leads
+
+* create serializers.py
+* create api.py
+* update urls.py under leadmanager project to include leads.urls
+* create urls.py under leads app
+
+python manage.py runserver
+http://localhost:8000/api/leads
+PostMan post requests headers/body
+
+*************************************
+python manage.py startapp frontend
