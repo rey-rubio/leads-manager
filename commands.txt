@@ -39,6 +39,9 @@ http://localhost:8000/api/leads
 PostMan post requests headers/body
 
 *************************************
+*************************************
+IMPLEMENT REACT
+
 python manage.py startapp frontend
 # create src/components, static/frontend, templates/frontend
 cd .. (to the root)
@@ -52,4 +55,23 @@ npm i react react-dom prop-types
 * configure scripts in package.json
 * create index.js in frontend/src
 * create Header.js, then import it in App.js
+
+
+*************************************
+*************************************
+IMPLEMENT REDUX (authentication, states, etc.)
+Redux DevTools for Chrome https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en
+
+npm i redux react-redux redux-thunk redux-devtools-extension
+
+* create store.js in leadmanager/src/
+* create index.js in leadmanager/src/reducers
+* create leads.js in leadmanager/src/reducers
+* create types.js in leadmanager/src/actions
+* create leads.js in leadmanager/src/actions
+
+npm i axios
+
+
+
 
