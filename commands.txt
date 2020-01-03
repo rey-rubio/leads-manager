@@ -73,5 +73,33 @@ npm i redux react-redux redux-thunk redux-devtools-extension
 npm i axios
 
 
+*************************************
+*************************************
+IMPLEMENT Error Handling and Alerts
+npm i react-alert react-alert-template-basic react-transition-group
+
+* update leads.js in leadmanager/frontend/src/actions to use createMEssage and GET_ERRORS
+* create messages.js in lead manager/frontend/src/actions
+* update types.js in leadmanager/frontend/src/actions
+* update App.js in leadmanager/frontend/src/componenets to include Alerts, and wrap the AlertProvider around the Fragment
+* create Alerts.js in leadmanager/frontend/src/componenets/layout
+* update Form.js in leadmanager/frontend/src/componenets/leads to clear form after submitting
+* create errors.js in leadmanager/frontend/src/reducers
+* update index.js in leadmanager/frontend/src/reducers
+* create messages.js in leadmanager/frontend/src/reducers
+
+
+*************************************
+*************************************
+Django Token Authentications
+* update models.py
+* update api.py
+* update leads.js to update returnErrors from messages.js
+* update settings.py with KNOX 
+
+python manage.py startapp accounts
+* create serializers.py
+* create api.py
+* create urls.py
 
 
